@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;400;500;600&family=Orbitron:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>Pokedex</title>
+</head>
+<body>
+    <main class="container">
+        <div class="loading">
+            <div class="spinner">
+            </div>
+            <div class="tx-spinner">
+                <h2>Loading Data . . .</h2>
+            </div>
+        </div>
+        <div class="leds">
+            
+            <div class="led led-red" id="led-red"></div>
+            <div class="led led-yellow" id="led-yellow"></div>
+            <div class="led led-green" id="led-green"></div>
+
+            <div class="led led-main" id="led-main"></div>
+        </div>
+        
+        <div class="display" id="display">
+            <!--<div class="card">
+                    <div class="card-img">
+                        <img src="" alt="pok">
+                    </div>
+                    <div class="card-info">
+                        <span>stat1</span>
+                        <span>stat1</span>
+                        <span>stat1</span>
+                    </div>
+                </div>-->
+        </div>
+        <div class="dashboard">
+            <div class="d-top">
+            <!--Busqueda por texto-->
+                <input type="search" placeholder="Search..." class="class-filter" id="filter">
+                <div class="types-cb" id="typeFilter">
+                    <!--Busqueda por Tipo-->
+                    <label for="water"><img src="./assets/icon/002-agua.png" alt=""></label>
+                    <input type="radio" name="typeFilter" value="agua" class="radioState" id="water">
+
+                    <label for="fire"><img src="./assets/icon/001-fuego.png" alt=""></label>
+                    <input type="radio" name="typeFilter" value="fuego" class="radioState" id="fire">
+
+                    <label for="grass"><img src="./assets/icon/003-hoja.png" alt=""></label>
+                    <input type="radio" name="typeFilter" value="hierba" class="radioState" id="grass">
+
+                    <label for="electric"><img src="./assets/icon/004-relampago.png" alt=""></label>
+                    <input type="radio" name="typeFilter" value="electricidad" class="radioState" id="electric">
+
+                    <input type="button" value="Reset" class="btn-reset" id="reset">
+                </div>
+            </div>
+
+            <div class="d-down">
+                <div class="display-green"></div>
+                <img class="arrow" src="./assets/img/joystick.png" alt="arrow">
+            </div>
+        </div>
+    </main>
+<script src="./js/main.js"></script>
+</body>
+</html>

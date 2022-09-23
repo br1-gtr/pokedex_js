@@ -1,0 +1,17 @@
+.types-cb{
+    display: flex!important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.types-cb > label{
+    padding-left: 10px;
+} 
+.btn-reset{
+    color:  rgb(214, 214, 212);
+    background-color: black;
+    border-radius: 22%;
+    padding: 6px;
+    margin-left: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
